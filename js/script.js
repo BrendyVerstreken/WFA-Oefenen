@@ -30,7 +30,7 @@ function Initialise() {
 //       data = arr;
 //       ToonDetails(arr);
 //     });
-}
+//}
 
 function ToonDetails(data) {
 
