@@ -22,15 +22,15 @@ function Initialise() {
   VulSelect();
 }
 
-// function FetchDataJson() {
-//   //Koppelingen naar een externe site.
-//   fetch("https://howest-gp-wfa.github.io/st-2021-1-S2-a-wfa-pe03-BrendyVerstreken/api/voertuig.json")
-//     .then(function (response) { return response.json(); })
-//     .then(function (arr) {
-//       data = arr;
-//       ToonDetails(arr);
-//     });
-//}
+ function FetchDataJson() {
+   //Koppelingen naar een externe site.
+   fetch("https://brendyverstreken.github.io/WFA-Oefenen/api/voertuig.json")
+     .then(function (response) { return response.json(); })
+     .then(function (arr) {
+       data = arr;
+       ToonDetails(arr);
+     });
+}
 
 function ToonDetails(data) {
 
