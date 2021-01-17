@@ -1,4 +1,4 @@
-{
+var autovoertuigen = {
     "Alles": [
         {
             "Naam": "Lamborghini Huracán",
