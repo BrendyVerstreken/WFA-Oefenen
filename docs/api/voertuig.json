@@ -1,135 +1,27 @@
 {
-    "Alles": [
-        {
-            "Naam": "Lamborghini Huracán",
-            "Prijs": 197896.95,
-            "Afbeeldingen": "LamborghiniHuracán.jpeg",
-            "Kleuren": [
-                "Oranje",
-                "Geel",
-                "Zwart"
-            ]
-        },
-        {
-            "Naam": "Ferrari 812 GTS",
-            "Prijs": 330276.95,
-            "Afbeeldingen": "Ferrari-812-GTS-1.jpg",
-            "Kleuren": [
-                "Rood",
-                "Grijs",
-                "Zwart",
-                "Wit"
-            ]
-        },
-        {
-            "Naam": "Alpine A110",
-            "Prijs": 56100.99,
-            "Afbeeldingen": "Alpine-A110-2018-1.jpg",
-            "Kleuren": [
-                "Blauw",
-                "Geel",
-                "Grijs"
-            ]
-        },
-        {
-            "Naam": "Hyundai Kona",
-            "Prijs": 38999.90,
-            "Afbeeldingen": "hyundai-kona.jpg",
-            "Kleuren": [
-                "Rood",
-                "Wit",
-                "Grijs",
-                "Zwart",
-                "Blauw"
-            ]
-        },
-        {
-            "Naam": "KIA Niro",
-            "Prijs": 27340.00,
-            "Afbeeldingen": "kia-niro.jpg",
-            "Kleuren": [
-                "Grijs",
-                "Zwart",
-                "Wit",
-                "Rood"
-            ]
-        },
-        {
-            "Naam": "Volvo XC40",
-            "Prijs": 30300.05,
-            "Afbeeldingen": "volvo-xc40.jpg",
-            "Kleuren": [
-                "Blauw",
-                "Wit",
-                "Grijs",
-                "Zwart"
-            ]
-        },
-        {
-            "Naam": "MINI Min",
-            "Prijs": 19700.55,
-            "Afbeeldingen": "MiniCooper.jpg",
-            "Kleuren": [
-                "Rood",
-                "Grijs",
-                "Zwart",
-                "Geel"
-            ]
-        },
-        {
-            "Naam": "Peugeot 108",
-            "Prijs": 11845.85,
-            "Afbeeldingen": "Peugeot108.jpg",
-            "Kleuren": [
-                "Grijs",
-                "Zwart",
-                "Wit",
-                "Rood",
-                "Blauw"
-            ]
-        },
-        {
-            "Naam": "Renault Twingo",
-            "Prijs": 11315.80,
-            "Afbeeldingen": "RenaultTwingo.jpeg",
-            "Kleuren": [
-                "Oranje",
-                "Wit",
-                "Geel",
-                "Zwart"
-            ]
-        }
-    ],
     "Luxewagen": [
         {
             "Naam": "Lamborghini Huracán",
             "Prijs": 197896.95,
-            "Afbeeldingen": "LamborghiniHuracán.jpeg",
-            "Kleuren": [
-                "Oranje",
-                "Geel",
-                "Zwart"
+            "Afbeeldingen": [
+                "https://upload.wikimedia.org/wikipedia/commons/7/78/Lamborghini_Huracan_Evo_Genf_2019_1Y7A5452.jpg",
+                "https://nl.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n#/media/Bestand:2014-03-04_Geneva_Motor_Show_1377.JPG"
             ]
         },
         {
             "Naam": "Ferrari 812 GTS",
             "Prijs": 330276.95,
-            "Afbeeldingen": "Ferrari-812-GTS-1.jpg",
-            "Kleuren": [
-                "Rood",
-                "Grijs",
-                "Zwart",
-                "Wit"
+            "Afbeeldingen": [
+                "https://cdni.autocarindia.com/ExtraImages/20190909025641_Ferrari-812-GTS-front-grey.jpg",
+                "https://performancedrive.com.au/wp-content/uploads/2019/11/Ferrari-812-GTS-Australian-debut-7.jpg"
             ]
         },
         {
             "Naam": "Alpine A110",
             "Prijs": 56100.99,
-            "Afbeeldingen": "Alpine-A110-2018-1.jpg",
-            "Kleuren": [
-                "Blauw",
-                "Geel",
-                "Grijs"
+            "Afbeeldingen": [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Alpine_A110_Pure_Genf_2018.jpg/1200px-Alpine_A110_Pure_Genf_2018.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/4/4f/Festival_automobile_international_2013_-_Concept_Renault_Alpine_A110_50_-_003.jpg"
             ]
         }
     ],
@@ -137,71 +29,51 @@
         {
             "Naam": "Hyundai Kona",
             "Prijs": 38999.90,
-            "Afbeeldingen": "hyundai-kona.jpg",
-            "Kleuren": [
-                "Rood",
-                "Wit",
-                "Grijs",
-                "Zwart",
-                "Blauw"
+            "Afbeeldingen": [
+                "https://car-images.bauersecure.com/pagefiles/71541/hyundai_kona_33.jpg",
+                "https://www.motortrend.com/uploads/sites/10/2018/04/2018-hyundai-kona-limited-suv-angular-front.png"
             ]
         },
         {
             "Naam": "KIA Niro",
             "Prijs": 27340.00,
-            "Afbeeldingen": "kia-niro.jpg",
-            "Kleuren": [
-                "Grijs",
-                "Zwart",
-                "Wit",
-                "Rood"
+            "Afbeeldingen": [
+                "https://dealerimages.dealereprocess.com/image/upload/w_1280/900476.jpg",
+                "https://s1.cdn.autoevolution.com/images/news/2017-kia-niro-priced-in-europe-109576_1.jpg"
             ]
         },
         {
             "Naam": "Volvo XC40",
             "Prijs": 30300.05,
-            "Afbeeldingen": "volvo-xc40.jpg",
-            "Kleuren": [
-                "Blauw",
-                "Wit",
-                "Grijs",
-                "Zwart"
+            "Afbeeldingen": [
+                "https://www.greencarguide.co.uk/wp-content/uploads/2018/02/Volvo-XC40-1500x1000.jpg",
+                "https://car-images.bauersecure.com/pagefiles/76512/volvo_xc40_03.jpg"
             ]
         }
     ],
     "StadsAutos": [
         {
-            "Naam": "MINI Min",
+            "Naam": "MINI Cooper",
             "Prijs": 19700.55,
-            "Afbeeldingen": "MiniCooper.jpg",
-            "Kleuren": [
-                "Rood",
-                "Grijs",
-                "Zwart",
-                "Geel"
+            "Afbeeldingen": [
+                "https://performancedrive.com.au/wp-content/uploads/2014/04/2014-MINI-Cooper-S.jpg",
+                "https://car-images.bauersecure.com/pagefiles/78861/mini_cooperd_dct_01.jpg"
             ]
         },
         {
             "Naam": "Peugeot 108",
             "Prijs": 11845.85,
-            "Afbeeldingen": "Peugeot108.jpg",
-            "Kleuren": [
-                "Grijs",
-                "Zwart",
-                "Wit",
-                "Rood",
-                "Blauw"
+            "Afbeeldingen": [
+                "https://www.littlegatepublishing.com/wp-content/uploads/2014/02/All-new-Peugeot-108.jpg",
+                "https://www.private-lease-aanbiedingen.nl/wp-content/uploads/peugeot-108-v1.jpg"
             ]
         },
         {
             "Naam": "Renault Twingo",
             "Prijs": 11315.80,
-            "Afbeeldingen": "RenaultTwingo.jpeg",
-            "Kleuren": [
-                "Oranje",
-                "Wit",
-                "Geel",
-                "Zwart"
+            "Afbeeldingen": [
+                "https://www.carscoops.com/wp-content/uploads/2015/06/3f936d02-renault-twingo-limited-3.jpg",
+                "http://4.bp.blogspot.com/-N0_A_h_1HBE/Tnn9hnq6u6I/AAAAAAAACXo/YbUULe9BZn4/s1600/Renault+Twingo+4.jpg"
             ]
         }
     ]

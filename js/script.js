@@ -4,7 +4,8 @@ var divContainer, divCategorie;
 var data;
 var rdbKleuren;
 
-var selectedCar;
+var dataLuxe, dataSuv, dataStads;
+
 
 window.addEventListener("load", Initialise);
 
@@ -18,7 +19,7 @@ function Initialise() {
   for (let index = 0; index < rdbKleuren.length; index++) {
     rdbKleuren[index].addEventListener('change',
       (event) => {
-        KiesKleurVanWagen(event.target.value);
+        ToonVolgensKleur(event.target.value);
       });
   }
 
@@ -27,54 +28,108 @@ function Initialise() {
   ToonInhoudCategorie();
 }
 
-
 function FetchDataJson() {
   //Koppelingen naar een externe site.
   fetch("https://brendyverstreken.github.io/WFA-Oefenen/api/voertuig.json")
     .then(function (response) { return response.json(); })
     .then(function (arr) {
-      data = arr;
-      //ToonDetails(arr);
+      dataLuxe = arr.Luxewagen;
+      console.log(dataLuxe);
+      createCardLuxe(dataLuxe);
+
+      dataSuv = arr.SUVAutos;
+      createCardSuv(dataSuv);
+
+      dataStads = arr.StadsAutos;
+      createCardStads(dataStads);
     });
 }
 
-function ToonDetails(data) {
+function createCardStads(arr) {
+  arr.forEach(element => {
+    let article = document.createElement("article");
+    article.className = "card";
 
-  //de data heeft verschillende keys (LuxeWagens, SUVAuto's, StadsAutos)
-  //dit komt terecht in 'key'.
-  for (let key in data) {
+    let name = document.createElement("h2");
+    name.innerHTML = element.Naam;
 
-    //nu we door de verschillende keys lussen, lussen we ook nog eens door de verschillende auto's per category
-    //vandaar mijn opmerking van daarnet dat deze misschien overbodig is.
-    //dit is een array, dus heeft een .length property
-    for (let index = 0; index < data[key].length; index++) {
+    let imgCard = document.createElement("img");
+    imgCard.src = element.Afbeeldingen;
+    imgCard.class = "imgCar";
 
-      //Hier word de auto aangemaakt
-      const car = data[key][index];
-      console.log('Car: ' + car);
+    let price = document.createElement("p");
+    price.innerHTML = `€ ${element.Prijs}`;
 
-      let divCar = document.createElement('div');
-      let carNaam = car.Naam;
-      let carPrijs = car.Prijs;
-      let carKleur = car.Kleuren.join(" - ");
+    let kleur = document.createElement("p");
+    kleur.innerHTML = element.KLeuren;
 
-      let samenvatting = `<h3>${carNaam}</h3><br/>
-                          Prijs: €${carPrijs}<br/><br/>
-                          <b>Kleuren:</b>${carKleur}<br/>`;
+    document.getElementById("containerStads").appendChild(article);
 
-      divCar.className = 'carInfo';
-      divCar.id = index;
-      divCar.innerHTML = samenvatting;
+    article.appendChild(name);
+    article.appendChild(imgCard);
+    article.appendChild(price);
+    article.appendChild(kleur);
 
-      //divContainer.appendChild(divCar);
-
-      //auto's is de array, dus geef mij de zoveelste auto
-      //en toon deze in de console
-      console.log(data[key][index]);
-
-    }
-  }
+  });
 }
+
+function createCardSuv(arr) {
+  arr.forEach(element => {
+    let article = document.createElement("article");
+    article.className = "card";
+
+    let name = document.createElement("h2");
+    name.innerHTML = element.Naam;
+
+    let imgCard = document.createElement("img");
+    imgCard.src = element.Afbeeldingen;
+    imgCard.class = "imgCar";
+
+    let price = document.createElement("p");
+    price.innerHTML = `€ ${element.Prijs}`;
+
+    let kleur = document.createElement("p");
+    kleur.innerHTML = element.KLeuren;
+
+    document.getElementById("containerSuv").appendChild(article);
+
+    article.appendChild(name);
+    article.appendChild(imgCard);
+    article.appendChild(price);
+    article.appendChild(kleur);
+
+  });
+}
+
+function createCardLuxe(arr) {
+  arr.forEach(element => {
+    let article = document.createElement("article");
+    article.className = "card";
+
+    let name = document.createElement("h2");
+    name.innerHTML = element.Naam;
+
+    let imgCard = document.createElement("img");
+    imgCard.src = element.Afbeeldingen;
+    imgCard.class = "imgCar";
+
+    let price = document.createElement("p");
+    price.innerHTML = `€ ${element.Prijs}`;
+
+    let kleur = document.createElement("p");
+    kleur.innerHTML = element.KLeuren;
+
+    document.getElementById("containerLuxe").appendChild(article);
+
+    article.appendChild(name);
+    article.appendChild(imgCard);
+    article.appendChild(price);
+    article.appendChild(kleur);
+
+  });
+}
+
+
 
 function VulSelect() {
   for (let categorie in autovoertuigen) {
@@ -112,3 +167,7 @@ function CreateDivision(objectCar) {
   return toevoeging;
 
 }
+
+
+
+

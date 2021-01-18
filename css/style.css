@@ -13,5 +13,11 @@ body {
 div.car {
     border: red solid 2px;
     margin: 15px;
+    width: 200px;
+    align-items: center; 
     
+}
+
+#divContainer {
+    text-align: right;
 }
